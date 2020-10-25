@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+  color: darkblue;
+  box-sizing: border-box;
+}
+
+body {
+    background: aliceblue;
+}
+
+/*added an underline under header 1 and 2*/
+h2 {
+  text-decoration: underline black;
+}
+
+p, li {
+  font-size: 16pt;
+}
+
+/*changed text color*/
+p strong, li strong {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+/*changed link color*/
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+/*added bakground color when mouse is hovering over link*/
+a:hover {
+  background-color: aliceblue;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*About me, contact info, and image*/
+section {
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*added border around image*/
+img {
+  margin-top: 2%;
+  width: 500px;
+  border-color: black;
+  border-width: 5px;
+  border-style: groove;
+}
+
+footer {
+  font-size: 14pt;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutMe {
+  margin: 5px;
+  padding: 5px;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+
+/*image*/
+.imgD {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/*work history*/
+.work {
+  font-size: 18pt;
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*experience*/
+.experience {
+  font-size: 18pt;
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*goals*/
+.goals {
+  font-size: 18pt;
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*education*/
+.education {
+  font-size: 18pt;
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*responsive design*/
+@media only screen and (max-width: 640px) {
+  p, li {
+    font-size: 10pt;
+  }
+  header,
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  img {
+    width: 150px;
+  }
+  section,
+  .work,
+  .experience,
+  .goals,
+  .education {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  section,
+  .work,
+  .experience,
+  .goals,
+  .education {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  img {
+    width: 250px;
+  }
+}
+
+/*added bakground color when mouse is hovering over link*/
+a:hover {
+  background-color: aliceblue;
+}
+
+/*changed font size and text align left*/
+footer {
+  font-size: 10pt;
+  text-align: left;
+}
